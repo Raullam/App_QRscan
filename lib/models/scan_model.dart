@@ -1,3 +1,10 @@
+// La classe ScanModel representa un codi QR escanejat amb un valor, tipus (http o geo) i un ID opcional.
+// El tipus es determina automàticament en funció del valor (si conté 'http', es considera un enllaç web, 
+// si no, es considera una ubicació geogràfica 'geo').
+// La funció 'getLatLng' extreu les coordenades de latitud i longitud del valor del codi QR, 
+// que s'espera que sigui una cadena de text amb el format 'geo:lat,lng'.
+// La classe també inclou mètodes per convertir-se a i des de JSON, així com per convertir-se en un mapa de dades.
+
 import 'dart:convert';
 
 import 'package:google_maps_flutter/google_maps_flutter.dart';
