@@ -1,3 +1,9 @@
+// La classe ScanListProvider gestiona l'estat dels codis QR escanejats a l'aplicació.
+// Utilitza la base de dades SQLite per emmagatzemar i recuperar els escaneigs de la taula 'Scans'.
+// Proporciona mètodes per afegir, carregar, filtrar per tipus, i eliminar escaneigs. 
+// També permet carregar un escaneig específic per ID. La llista de scans es manté actualitzada
+// i els canvis es propaguen als widgets que escolten el proveïdor mitjançant 'notifyListeners'.
+
 import 'package:flutter/material.dart';
 import 'package:qr_scan/models/scan_model.dart';
 import 'package:qr_scan/providers/db_provider.dart';
