@@ -1,3 +1,11 @@
+// La classe ScanTiles mostra una llista de codis QR escanejats filtrats pel tipus 'tipus'.
+// Utilitza un ListView.builder per generar els elements de la llista de manera eficient.
+// Cada element de la llista és un widget Dismissible que permet eliminar un codi QR 
+// de la llista amb un gest de desplaçament. Quan es desplaça un element, es crida 
+// el mètode 'esborrarScanPerId' del proveïdor 'ScanListProvider' per eliminar el codi QR.
+// El widget ListTile mostra el valor del codi QR, el seu ID, i un icono diferent segons el tipus de codi ('http' o 'geo').
+// En prémer un element de la llista, s'obre el codi QR amb la funció 'launchURL', que obre l'enllaç associat.
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_scan/providers/scan_list_provider.dart';
