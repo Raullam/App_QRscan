@@ -1,3 +1,8 @@
+// La classe DBPovider és una classe singleton que gestiona la connexió i operacions amb la base de dades SQLite.
+// Utilitza la llibreria sqflite per emmagatzemar i recuperar els codis QR escanejats (ScanModel) en una taula anomenada 'Scans'.
+// Proporciona mètodes per inserir, actualitzar, eliminar i obtenir codis QR, tant per ID com per tipus.
+// La base de dades es crea en un directori específic de l'aplicació, i les operacions s'executen de manera asíncrona.
+
 import 'dart:io';
 
 import 'package:path_provider/path_provider.dart';
