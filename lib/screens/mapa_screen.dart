@@ -1,3 +1,9 @@
+// La classe MapaScreen mostra un mapa interactiu utilitzant Google Maps per mostrar la ubicació
+// d'un codi QR de tipus 'geo'. La ubicació es recupera del model ScanModel passat com a argument
+// en la navegació. El mapa es pot veure en dos tipus de visualització: 'normal' o 'híbrid', 
+// que es poden alternar mitjançant un botó flotant. A més, es mostra un marcador en la ubicació especificada
+// pel codi QR, i es permet desplaçar-se a la seva ubicació mitjançant el botó 'my_location'.
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
