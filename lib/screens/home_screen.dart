@@ -1,3 +1,19 @@
+// La classe HomeScreen és la pantalla principal de l'aplicació.
+// Conté l'estructura de la interfície d'usuari, incloent l'AppBar, 
+// el cos de la pantalla (_HomeScreenBody), la barra de navegació inferior
+// (CustomNavigationBar) i el botó flotant per escanejar (ScanButton).
+// Quan es prem el botó de la paperera, es crida el mètode 'esborrarTotsScans'
+// per esborrar tots els escaneigs de la llista.
+//
+// El cos de la pantalla (_HomeScreenBody) canvia dinàmicament en funció de 
+// la selecció actual de la barra de navegació inferior. S'utilitza el proveïdor
+// 'UiProvider' per obtenir la selecció de la pestanya activa i, segons el tipus
+// de codi QR escanejat (per exemple, 'geo' o 'http'), es carrega una pantalla diferent:
+// - Si la selecció és 0, es carrega 'MapasScreen' amb els escaneigs de tipus 'geo'.
+// - Si la selecció és 1, es carrega 'DireccionsScreen' amb els escaneigs de tipus 'http'.
+// El proveïdor 'ScanListProvider' s'encarrega de gestionar i filtrar els escaneigs 
+// segons el tipus seleccionat.
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_scan/providers/scan_list_provider.dart';
