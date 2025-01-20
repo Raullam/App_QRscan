@@ -1,3 +1,12 @@
+// La classe ScanButton crea un botó flotant que, quan es prem, obre la pantalla d'escaner de codis QR.
+// Quan es detecta un codi QR, el resultat es passa de nou a la pantalla anterior, on es gestiona i s'emmagatzema.
+// A més, el codi QR es guarda mitjançant el proveïdor ScanListProvider i es llança una URL si el codi és un enllaç.
+
+
+// La classe ScannerScreen utilitza el paquet 'mobile_scanner' per escanejar codis QR i de barres.
+// Quan es detecta un codi, el valor del codi QR es retorna a la pantalla anterior mitjançant 'Navigator.pop'.
+// Si es detecta un valor, es retorna a la pantalla anterior amb el valor escanejat.
+
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:provider/provider.dart';
