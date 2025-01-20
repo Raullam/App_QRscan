@@ -1,3 +1,6 @@
+// Aquesta és la classe principal de l'aplicació, que defineix el comportament global
+// mitjançant MaterialApp. Aquí configurem les rutes, instanciem els proveidors el temes i altres aspectes importants.
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_scan/providers/scan_list_provider.dart';
